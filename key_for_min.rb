@@ -12,8 +12,9 @@ min_value = nil
    if min_value == nil
      min_key = key
      min_value = value
-   else
-
+   elsif value < min_value
+     min_key = key
+     min_value = value
    end
  end
 
